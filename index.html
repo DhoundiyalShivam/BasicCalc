@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>Basic Calc</title>
+    <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="calc">
+            <h2>Basic Calculator</h2>
+            <input type="number" placeholder="enter first Number" id="num1" >
+            <select id="operator">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+            </select>
+            <input type="number" placeholder="Enter Second Number" defaultvalue="0" id="num2" >
+            <input type="button" value="=" id="equal" onclick="operation()" >
+            <input type="number" placeholder="result" id="result" disabled>
+            <input type="button" value="reset" id="reset" onclick="reset()" >
+
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
